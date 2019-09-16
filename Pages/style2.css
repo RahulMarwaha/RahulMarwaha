@@ -1,7 +1,31 @@
 h1{
+	background-color: black;
 	text-align: center;
 	font: 45px Comic Sans MS, sans-serif;
+	color: white;
+}
+nav{
+	background-color: white;
+	font: 25px Comic Sans MS, serif;
+	color: white;
+	}
+ul{
+	display: inline-block;
+	text-decoration: none;
+}
+li a{
+	color: black;
+	text-decoration: none;
+	display:inline-block; 
+}
+li{
+	display:inline-block; 
 }
 body {
-	background-image: url("blue-gradient-background.png");
+	background-image: url("../blue-gradient-background.png");
+	margin: 0
+}
+p{
+	text-align: center;
+	font: Comic Sans MS, sans-serif;
 }
