@@ -7,11 +7,3 @@ function Angles(){
 	}
 
 }
-function Angle(){
-		firstangle = document.getElementById("firstangle").value;
-		secondangle = document.getElementById("secondangle"). value;
-		document.getElementById("result").innerHTML = 180-firstangle-secondangle
-	if (180-firstangle-secondangle <=0) {
-		 var result = alert("NaN")
-	}
-}

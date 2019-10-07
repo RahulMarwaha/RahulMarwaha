@@ -15,27 +15,34 @@
 		</ul>
 	</nav>
 	<button id="Demo" onclick="Game()" >Let us play game</button>
+	<p>Please Put in two angles of a triangle!</p>
+	<form>
+		1st angle: <input type="Value" id="user_angle1"/>
+		<br>
+		2nd angle: <input type="Value" id="user_angle2"/>
+		<br>
+		<input type="button" onclick="maths()" value="Submit">
+	</form>
+	<p>The Result is:<br>
+		<span id="result"></span>
 	<script>
-	function Game(){
-		document.getElementById("Demo").innerHTML = "Lets Play game!";
-		var user_angle1= prompt("Enter your first Angle!");
-		var user_angle2= prompt("Enter your second Angle!");
-		if(180 - user_angle1 -user_angle2 >=0){
-		alert(180-user_angle1 - user_angle2);
+		function maths(){
+			var firstangle,text;
+			firstangle
+			=document.getElementById("user_angle1"). value;
+		if (firstangle<0 && firstangle>180){
+			var secondangle, text;
+			secondangle
+			=document.getElementById("user_angle2").value;{
+		if(secondangle<0 && secondangle>180){
+			alert("NaN")
+		}		
+			}
 		}
-		else if(180-user_angle1-user_angle2 <=0){
-			alert("This can not be done. Please Try again")
+		else(true)
+			document.getElementById("result").text;
 		}
-		
-}
-</script>
-<form>
-1st Angle : <input type="text" id="firstangle" /><br>
-2nd Angle: <input type="text" id="secondangle" /><br>
-<input type="button" onClick="Angle()" Value="Angle" />
-</form>
-<p>The Result is : <br>
-<span id = "result"></span>
-</p>
+	
+	</script>
 </body>
 </html>
