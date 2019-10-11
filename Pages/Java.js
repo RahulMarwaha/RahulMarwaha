@@ -12,15 +12,15 @@ function Angles(){
 
 function Years(){
 	var user_century= prompt("What is the year you want?");
-	if(user_century%1000 ==0){
+	 if(user_century%1000 ==0){
 		alert(user_century/100)
 		}
-	if(user_century>=0 && user_century<= 100){
+	else if(user_century>=0 && user_century<= 100){
 		alert("1");
 	}
 	else{
-		alert(Math.trunc(user_century / 100 + 1 ))
-		}
+		alert(Math.trunc(user_century/100 )+1)
+	}
 	}
 	//Math.trunc was used to take away the decimal numbers created from dividing the users year by 100//
 function Numbers(){
