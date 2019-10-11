@@ -39,3 +39,4 @@ for(var i=1; i<=100; i++){
 	}
 }
 }
+//the numbers will be shown in console//
