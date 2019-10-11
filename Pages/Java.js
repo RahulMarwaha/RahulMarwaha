@@ -18,7 +18,7 @@ function Years(){
 	if(user_century>=0 && user_century<= 100){
 		alert("1");
 	}
-	else if{
+	else{
 		alert(Math.trunc(user_century / 100 + 1 ))
 		}
 	}
