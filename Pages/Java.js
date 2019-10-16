@@ -31,3 +31,7 @@ function Years(){
 		alert(Math.round(user_century / 100 + 1 ))
 		}
 	}
+function Counting(){
+	for(var i = 1; i<=100; i++)
+		if(number[4] % multiples ===0)	
+}
