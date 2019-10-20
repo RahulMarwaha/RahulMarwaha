@@ -19,19 +19,11 @@ function Years(){
 		alert("1");
 	}
 	else{
-<<<<<<< HEAD
-		alert(Math.round(user_century / 100 + 1 ))
+
+		alert(Math.floor(user_century / 100 + 1 ))
 		}
 	}
-function Counting(){
-	for(var i = 1; i<=100; i++)
-		if(number[4] % multiples ===0)	
-}
-=======
-		alert(Math.trunc(user_century/100 )+1)
-	}
-	}
-	//Math.trunc was used to take away the decimal numbers created from dividing the users year by 100//
+//Math.floor is used to round the number created down//
 function Numbers(){
 for(var i=1; i<=100; i++){
 	if(i%4 ===0 && i%10 ===0){
