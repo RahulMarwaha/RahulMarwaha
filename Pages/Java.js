@@ -41,4 +41,3 @@ for(var i=1; i<=100; i++){
 }
 }
 //the numbers will be shown in console//
->>>>>>> 3a7a8d7042edb91093656622f1ffbba20522ec79
