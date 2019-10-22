@@ -3,10 +3,11 @@ function Angles(){
 	var user_angle2= prompt("Enter your second Angle!");
 	if(180 - user_angle1 -user_angle2 >=0){
 		alert(180-user_angle1 - user_angle2)
-		
+		//Here it would take both angles and find the third unkown angle//
 	}
 	if(180-user_angle1-user_angle2 <=0){
 		alert("This can not be done. Please put two other angles.")
+		//THis is made if the user have given angles that were not able to become a traingle//
 	}
 }
 

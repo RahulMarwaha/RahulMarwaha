@@ -4,28 +4,31 @@ h1{
 	font: 45px Comic Sans MS, sans-serif;
 	color: white;
 }
-
+/* This makes all h1's font comic sans, white and have background of black*/
 nav{
 	background-color: white;
 	font: 25px Comic Sans MS, serif;
 	color: white;
 	}
+  /*This allows my navigation bar to have a white background and have the font of comic sans*/
 ul{
 	display: inline-block;
 	text-decoration: none;
 }
+/* THis allows my navigation bar to be horizontal rather than vertical.*/
 p{
 	background-color: white;
 	font:15px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	margin-left: 20px;
 	margin-right: 20px;
 }
+/* This gives my paragraph's a different font from what it was origanaly.*/
 li a{
 	color: black;
 	text-decoration: none;
 	display:inline-block; 
-
 }
+/*This gives the words in my navigation bar a black colour. */
 li{
 	display:inline-block; 
 }
@@ -33,16 +36,7 @@ body {
 	background-image: url("../blue-gradient-background.png");
 	margin: 0
 }
-#familyguy{
-align-items: left;
-}
-#sports{
-align-items: right;
-}
-p{
-	text-align: center;
-	font: Comic Sans MS, sans-serif;
-}
+/*This gives my pages background blue */
 button {
   display: inline-flex;
   align-items: center;
@@ -57,44 +51,6 @@ button {
   text-decoration: none;
   transition: background .3s, transform .3s, box-shadow .3s;
    will-change: transform;
-  
-  &:hover {
-    background: darken(#C06C84,10%);
-    box-shadow: 0 4px 17px rgba(0,0,0,0.2);
-    transform: translate3d(0, -2px, 0);
-  }
-  &:active {
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
-    transform: translate3d(0, 1px, 0);
-  }
-}
-pulse {
-  position: relative;
-  
-  &:before, &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255,255,255,.4);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    margin: auto;
-  }
-  &:before {
-    animation: pulse 1.5s infinite linear;
-  }
-  &:after {
-    animation: pulse 2s .4s infinite linear;
-  }
-  &:hover:before, &:hover:after {
-    display: none;
-  }
-}
 h2{
 	background-color:black;
 	color:white;
@@ -109,6 +65,8 @@ h3{
 	margin-right: 1225px;
 	font:24px Comic Sans MS, sans-serif;
 }
+/* This makes all h1's font comic sans, black and have background of white.*/
+
 h4{
 	background-color: black;
 	color:white;
