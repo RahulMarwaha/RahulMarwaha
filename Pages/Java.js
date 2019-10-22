@@ -14,14 +14,14 @@ function Angles(){
 function Years(){
 	var user_century= prompt("What is the year you want?");
 	 if(user_century%1000 ==0){
-		alert(user_century/100)
+		alert("Your are in the" + user_century/100 + "Centrey!")
 		}
 	else if(user_century>=0 && user_century<= 100){
-		alert("1");
+		alert("You are in the 1st Centrey!");
 	}
 	else{
 
-		alert(Math.floor(user_century / 100 + 1 ))
+		alert("You are in the" + Math.floor(user_century / 100 + 1 ) + "Centrey!")
 		}
 	}
 //Math.floor is used to round the number created down//
