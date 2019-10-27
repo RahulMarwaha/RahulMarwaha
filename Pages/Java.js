@@ -14,7 +14,7 @@ function Angles(){
 function Years(){
 	var user_century= prompt("What is the year you want?");
 	 if(user_century%1000 ==0){
-		alert("Your are in the" + user_century/100 + "Centrey!")
+		alert("Your are in the " + user_century/100 + " Centrey!")
 		}
 	else if(user_century>=0 && user_century<= 100){
 		alert("You are in the 1st Centrey!");
