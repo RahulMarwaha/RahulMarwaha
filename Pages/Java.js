@@ -21,7 +21,7 @@ function Years(){
 	}
 	else{
 
-		alert("You are in the " + Math.floor(user_century / 100 + 1 ) + " Centrey!")
+		alert("You are in the " + Math.floor(user_century / 100 + 1 ) + "th Centrey!")
 		}
 	}
 //Math.floor is used to round the number created down//
