@@ -42,3 +42,25 @@ for(var i=1; i<=100; i++){
 }
 }
 //the numbers will be shown in console//
+function Alternative(){
+	var txt = prompt("What is your sentence/word??");
+	var character = txt.toLowerCase().split("");
+	for(var i=0; i <character.length; i+=2){
+		character[i] = character[i].toUpperCase();
+	}
+	console.log(character.join(""));
+}
+function login(){
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	if(username=="RahulMarwaha" && password == "HelloWorld"){
+		alert("Login accepted");
+	}
+	else{
+		alert("Login denied. Please Try again or change your password!")
+	}
+}
+function Counter(){
+	var txt = prompt("Type in a word or a sentance");
+	console.log(txt + " is " + txt.length + " characters long")
+}
