@@ -67,7 +67,7 @@ function Counter(){
 function Encryption(){
 	var str =document.getElementById("Message").value;
 	//The variable str is taking what the user had in the input/form and creating it into a value
-	var changes ={
+	var key ={
 		a:'e', b:'v', c:'u', d:'l',
 		e:'a', f:'m', g:'p', h:'r',
 		i:'t', j:'q', k:'x', l:'d',
@@ -80,9 +80,10 @@ function Encryption(){
 	//The money sign is being used as a symbol to represent a space
 	//The variable key is what I will give to my friend to know what the code means when it is in our code
 	str = str.toLowerCase();
-	var encryptor = '';
+	//I am putting the string into lower case so that it can be coordinated with the key
+	let encryptor = '';
 	for(var i=0; i<str.length; i++){
-		encryptor += changes[str[i]];
+		encryptor += key[str[i]];
 	}
 	//This for loop goes through the whole message that the user put in the form and changes it with the assigned letter it has in the variable key
  var answer = alert(encryptor);
@@ -91,13 +92,13 @@ function Decryptor(){
 	var str = document.getElementById("message").value;
 		//The variable str is taking what the user had in the input/form and creating it into a value
 
-	var changes ={
+	var key ={
 		a:'e', b:'v', c:'u', d:'l',
 		e:'a', f:'m', g:'p', h:'r',
 		i:'t', j:'q', k:'x', l:'d',
 		m:'f', n:'s', o:'t', p:'g',
 		q:'j', r:'h', s:'n', t:'o',
-		u:'c', v:'b', w:'y', x:'k',
+		u:'c',	v:'b', w:'y', x:'k',
 		y:'w', z:'z',$:'$',
 	}
 	//All letters are switched in a way that their frequency levels would be same or a little bit off. So that the person trying to break my code will have to work a little harder.
@@ -105,7 +106,7 @@ function Decryptor(){
 	//The variable key is what I will give to my friend to know what the code means when it is in our code
 	var decryptor ='';
 	for(var i=0; i<str.length; i++){
-		decryptor += changes[str[i]];
+		decryptor += key[str[i]];
 	}
 		//This for loop goes through the whole message that the user put in the form and changes it with the assigned letter it has in the variable key
 
