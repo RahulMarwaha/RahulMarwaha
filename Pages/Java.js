@@ -65,6 +65,7 @@ function Counter(){
 	console.log(txt + " is " + txt.length + " characters long!!")
 }
 function Encryption(){
+	//The function is connected to the button that is named encryt
 	var str =document.getElementById("Message").value;
 	//The variable str is taking what the user had in the input/form and creating it into a value
 	var key ={
@@ -76,19 +77,21 @@ function Encryption(){
 		u:'c',	v:'b', w:'y', x:'k',
 		y:'w', z:'z',$:'$',
 	}
-	//All letters are switched in a way that their frequency levels would be same or a little bit off. So that the person trying to break my code will have to work a little harder.
+	//When encrypting the message and figuring which letter cooresponds with what letter, I used the frequency of each letter and change it with a letter that has a similar frequency to the letter it is being changed with. ex. E and A were switched becasue they bothe have similar frequency of use.
 	//The money sign is being used as a symbol to represent a space
 	//The variable key is what I will give to my friend to know what the code means when it is in our code
 	str = str.toLowerCase();
-	//I am putting the string into lower case so that it can be coordinated with the key
+	//I am putting the string into lower case so that it can be coordinated with the 
 	let encryptor = '';
 	for(var i=0; i<str.length; i++){
 		encryptor += key[str[i]];
 	}
 	//This for loop goes through the whole message that the user put in the form and changes it with the assigned letter it has in the variable key
- var answer = alert(encryptor);
+ 	return encryptor;
+ 	//The encryted message will be found in the console by me using the return function
 }
 function Decryptor(){
+	// This function is connected to the button that is named decrpyt
 	var str = document.getElementById("message").value;
 		//The variable str is taking what the user had in the input/form and creating it into a value
 
@@ -101,14 +104,13 @@ function Decryptor(){
 		u:'c',	v:'b', w:'y', x:'k',
 		y:'w', z:'z',$:'$',
 	}
-	//All letters are switched in a way that their frequency levels would be same or a little bit off. So that the person trying to break my code will have to work a little harder.
 	//The money sign is being used as a symbol to represent a space
 	//The variable key is what I will give to my friend to know what the code means when it is in our code
+	//When decrypting the message and figuring which letter cooresponds with what letter, I used the frequency of each letter and change it with a letter that has a similar frequency to the letter it is being changed with. ex. E and A were switched becasue they bothe have similar frequency of use.
 	var decryptor ='';
 	for(var i=0; i<str.length; i++){
 		decryptor += key[str[i]];
 	}
-		//This for loop goes through the whole message that the user put in the form and changes it with the assigned letter it has in the variable key
-
+		//This for loop goes through the whole message that the user put in the form and decrypts it into the message that the other user will understand 
 	return decryptor
 }
