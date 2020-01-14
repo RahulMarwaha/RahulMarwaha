@@ -107,7 +107,7 @@ function Encryption(){
 		encryptor += key[str[i]];
 	}
 	//This for loop goes through the whole message that the user put in the form and changes it with the assigned letter it has in the variable key
- 	consolelog(encryptor);
+ 	console.log(encryptor)
  	//The encryted message will be found in the console by me using the return function
 }
 function Decryptor(){
@@ -152,5 +152,5 @@ function Decryptor(){
 		decryptor += key[str[i]];
 	}
 		//This for loop goes through the whole message that the user put in the form and decrypts it into the message that the other user will understand 
-	conolelog(decryptor)
+	console.log(decryptor);
 }
